@@ -1,7 +1,4 @@
-/**
- * dana.id.
- * Copyright (c) 2017‐2022 All Rights Reserved.
- */
+
 package com.ahmadirfaanhibatullah.spring.config.value;
 
 import lombok.Getter;
@@ -39,7 +36,7 @@ public class ValueTest {
 
     @Test
     void testSystemProperties() {
-        assertEquals("/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home", systemProperties.getJavaHome());
+        assertNotNull(systemProperties.getJavaHome());
     }
 
     @SpringBootApplication

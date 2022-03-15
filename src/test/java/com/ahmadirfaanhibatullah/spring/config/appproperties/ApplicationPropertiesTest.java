@@ -32,7 +32,7 @@ public class ApplicationPropertiesTest {
     void testEnvironmentJavaHome() {
         String java_home = environment.getProperty("JAVA_HOME");
         System.out.println(java_home);
-        assertEquals(java_home, "/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home");
+        assertNotNull(java_home);
     }
 
     @SpringBootApplication
